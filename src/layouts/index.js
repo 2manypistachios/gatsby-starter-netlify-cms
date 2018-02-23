@@ -4,13 +4,15 @@ import Helmet from 'react-helmet';
 
 import Navbar from '../components/Navbar';
 import './all.sass';
+import 'semantic-ui-css/semantic.min.css';
+
 
 const TemplateWrapper = ({ children }) => (
-  <div>
-    <Helmet title="Home | Gatsby + Netlify CMS" />
-    <Navbar />
-    <div>{children()}</div>
-  </div>
+    <div>
+      <Helmet title="Maxim Podolski" />
+      <Navbar />
+      <div>{children()}</div>
+    </div>
 );
 
 TemplateWrapper.propTypes = {
